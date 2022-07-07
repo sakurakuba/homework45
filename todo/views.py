@@ -14,10 +14,11 @@ def add_task(request):
     if request.method == 'GET':
         return render(request, 'add.html', {'statuses': STATUS_CHOICES})
     else:
+        title = request.POST.get('title')
         description = request.POST.get('description')
         status = request.POST.get('status')
         deadline = request.POST.get('deadline')
-        Task.objects.create(description=description, status=status, deadline=deadline)
+        Task.objects.create(title=title, description=description, status=status, deadline=deadline)
         return render(request, 'add.html')
 
 
