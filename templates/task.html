@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+</head>
+<body>
+<h1>Task detail:</h1>
+    <p>Task: {{ task.title }}</p>
+    <p>Description: {{ task.description }}</p>
+    <p>Deadline: {{ task.deadline }}</p>
+    <p>Created at: {{ task.created_at|date:"Y-m-d G:i" }}</p>
+<p>
+<h3><a href="/">Return to main page</a> </h3>
+</p>
+</body>
+</html>
