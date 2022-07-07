@@ -4,6 +4,7 @@ from django.db import models
 STATUS_CHOICES = [('new', 'Новая'), ('in_progress', 'В процессе'),  ('done', 'Сделано')]
 
 class Task(models.Model):
+    title = models.CharField(max_length=300, null=False, blank=False, verbose_name='title', default='no task name')
     description = models.CharField(max_length=300, null=False, blank=False, verbose_name='description')
     status = models.CharField(max_length=20, null=False, blank=False, choices=STATUS_CHOICES, verbose_name='Status', default=STATUS_CHOICES[0][0])
     deadline = models.DateField(max_length=40, default='', verbose_name='deadline')

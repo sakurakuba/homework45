@@ -16,6 +16,7 @@
     <tr>
       <th scope="col">#</th>
       <th scope="col">Task</th>
+        <th scope="col">Description</th>
       <th scope="col">Status</th>
       <th scope="col">Deadline</th>
     </tr>
@@ -24,6 +25,7 @@
     <tr>
         {% for ts in tasks %}
           <th scope="row">{{ ts.id }}</th>
+            <td>{{ ts.title }}</td>
           <td>{{ ts.description }}</td>
           <td>{{ ts.status }}</td>
           <td>{{ ts.deadline }}</td>
