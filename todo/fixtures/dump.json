@@ -1,0 +1,163 @@
+[
+{
+  "model": "todo.task",
+  "pk": 1,
+  "fields": {
+    "description": "finish homework",
+    "status": "new",
+    "deadline": "2022-07-07",
+    "created_at": "2022-07-07T05:05:21.998Z",
+    "updated_at": "2022-07-07T05:06:31.976Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 2,
+  "fields": {
+    "description": "call to doctor",
+    "status": "new",
+    "deadline": "2022-07-08",
+    "created_at": "2022-07-07T05:07:06.484Z",
+    "updated_at": "2022-07-07T05:07:06.484Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 3,
+  "fields": {
+    "description": "buy wine",
+    "status": "new",
+    "deadline": "2022-07-08",
+    "created_at": "2022-07-07T05:07:40.200Z",
+    "updated_at": "2022-07-07T05:07:40.200Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 4,
+  "fields": {
+    "description": "clean houes",
+    "status": "in_progress",
+    "deadline": "2022-07-07",
+    "created_at": "2022-07-07T05:13:38.445Z",
+    "updated_at": "2022-07-07T05:13:38.445Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 5,
+  "fields": {
+    "description": "cook dinner",
+    "status": "done",
+    "deadline": "2022-07-07",
+    "created_at": "2022-07-07T05:13:57.632Z",
+    "updated_at": "2022-07-07T05:13:57.632Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 6,
+  "fields": {
+    "description": "sads",
+    "status": "new",
+    "deadline": "2022-07-07",
+    "created_at": "2022-07-07T06:03:48.778Z",
+    "updated_at": "2022-07-07T06:03:48.778Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 7,
+  "fields": {
+    "description": "finish homework",
+    "status": "new",
+    "deadline": "2022-07-08",
+    "created_at": "2022-07-07T06:04:42.729Z",
+    "updated_at": "2022-07-07T06:04:42.729Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 8,
+  "fields": {
+    "description": "sads",
+    "status": "new",
+    "deadline": "2022-07-07",
+    "created_at": "2022-07-07T06:14:24.242Z",
+    "updated_at": "2022-07-07T06:14:24.242Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 9,
+  "fields": {
+    "description": "buy wine",
+    "status": "new",
+    "deadline": "2022-07-08",
+    "created_at": "2022-07-07T06:14:36.446Z",
+    "updated_at": "2022-07-07T06:14:36.447Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 10,
+  "fields": {
+    "description": "buy wine",
+    "status": "new",
+    "deadline": "2022-07-09",
+    "created_at": "2022-07-07T06:15:10.313Z",
+    "updated_at": "2022-07-07T06:15:10.313Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 15,
+  "fields": {
+    "description": "buy wine",
+    "status": "new",
+    "deadline": "2022-07-07",
+    "created_at": "2022-07-07T06:28:06.072Z",
+    "updated_at": "2022-07-07T06:28:06.072Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 25,
+  "fields": {
+    "description": "cook dinner",
+    "status": "in_progress",
+    "deadline": "2022-07-09",
+    "created_at": "2022-07-07T06:39:50.649Z",
+    "updated_at": "2022-07-07T06:39:50.649Z"
+  }
+},
+{
+  "model": "todo.task",
+  "pk": 26,
+  "fields": {
+    "description": "ttt",
+    "status": "done",
+    "deadline": "2022-07-07",
+    "created_at": "2022-07-07T06:40:29.496Z",
+    "updated_at": "2022-07-07T06:40:29.497Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$brfGFzEIlJ7dIiOpGM5BBm$as7Y+fvWEqKZ0RuhKLpLXKd6wd/SxEGXmSzvm1XoQoM=",
+    "last_login": "2022-07-07T05:01:38.498Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-07-07T05:01:18.912Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
