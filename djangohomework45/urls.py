@@ -20,8 +20,8 @@ from django.urls import path
 from todo.views import index_view, add_task, task_view
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', index_view),
-    path('add_task/', add_task),
-    path('task/<int:pk>', task_view)
+    path('admin/', admin.site.urls, name='admin'),
+    path('', index_view, name='main'),
+    path('add_task/', add_task, name='add_task'),
+    path('task/<int:pk>', task_view, name='task_view')
 ]
