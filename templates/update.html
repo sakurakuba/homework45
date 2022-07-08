@@ -18,7 +18,7 @@
     <label>Description:</label><br/>
     <input type="text" name="description", value="{{ task.description }}"/><br/>
     <label>Deadline:</label><br/>
-    <input type="text" name="deadline", value="{{ task.deadline }}"/><br/>
+    <input type="text" name="deadline", value="{{ task.deadline | date:"Y-m-d" }}"/><br/>
     <br/>
     <input type="submit" value="Update"/>
 </form>
