@@ -1,14 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Update</h1>
+
+{% extends "base.html" %}
+{% block title %} Update task {% endblock %}
+{% block content %}
+<h1>Update task</h1>
+
+<form action="" method="post">
+{% csrf_token %}
+    <label>Status:</label><br/>
+    <select name = 'status'>
+    {% for val, status in statuses %}
+       <option value="{{ val }}">{{ status }}</option>
+    {% endfor %}
+        </select>
+    <br/>
+    <label>Task name:</label><br/>
+    <input type="text" name="title", value="{{ task.title }}"/><br/>
+    <label>Description:</label><br/>
+    <input type="text" name="description", value="{{ task.description }}"/><br/>
+    <label>Deadline:</label><br/>
+    <input type="text" name="deadline", value="{{ task.deadline }}"/><br/>
+    <br/>
+    <input type="submit" value="Update"/>
+</form>
+
 
 <p>
 <h3><a href="/">Return to main page</a> </h3>
 </p>
-</body>
-</html>
+{% endblock %}

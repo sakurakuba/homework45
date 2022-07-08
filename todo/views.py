@@ -30,7 +30,7 @@ def task_view(request, pk):
 def task_update(request, pk):
     task = get_object_or_404(Task, pk=pk)
     if request.method == 'GET':
-        return render(request, 'update.html', {'task': task})
+        return render(request, 'update.html', {'task': task, 'statuses': STATUS_CHOICES})
     else:
         task.title = request.POST.get('title')
         task.description = request.POST.get('description')
