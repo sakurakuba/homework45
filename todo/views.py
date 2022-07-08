@@ -24,7 +24,26 @@ def add_task(request):
 
 def task_view(request, pk):
     task = get_object_or_404(Task, pk=pk)
-    return render(request, 'task.html', context={
-        'task': task
-    })
+    return render(request, 'task.html', {"task": task})
 
+
+def task_update(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'update.html', {'task': task})
+    else:
+        task.title = request.POST.get('title')
+        task.description = request.POST.get('description')
+        task.status = request.POST.get('status')
+        task.deadline = request.POST.get('deadline')
+        task.save()
+        return redirect('task_view', pk=task.pk)
+
+
+def task_delete(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'delete.html', {'task': task})
+    else:
+        task.delete()
+        return redirect('main')
