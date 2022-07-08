@@ -5,24 +5,9 @@
 <h1>Add task to To-Do list</h1>
 
 <form action="" method="post">
-{% csrf_token %}
-    <label>Status:</label><br/>
-    <select name = 'status'>
-    {% for val, status in statuses %}
-       <option value="{{ val }}">{{ status }}</option>
-    {% endfor %}
-        </select>
-    <br/>
-    <label>Task name:</label><br/>
-    <input type="text" name="title"/><br/>
-    <label>Description:</label><br/>
-    <input type="text" name="description"/><br/>
-    <label>Deadline:</label><br/>
-    <input type="text" name="deadline"/><br/>
-    <br/>
+{% include "partial/form.html" %}
     <input type="submit" value="Send"/>
 </form>
-
 
 <p>
 <h3><a href="/">Return to main page</a> </h3>

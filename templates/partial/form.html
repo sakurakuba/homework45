@@ -1,0 +1,15 @@
+{% csrf_token %}
+    <label>Status:</label><br/>
+    <select name = 'status'>
+    {% for val, status in statuses %}
+       <option value="{{ val }}">{{ status }}</option>
+    {% endfor %}
+        </select>
+    <br/>
+    <label>Task name:</label><br/>
+    <input type="text" name="title", value="{{ task.title }}"/><br/>
+    <label>Description:</label><br/>
+    <input type="text" name="description", value="{{ task.description }}"/><br/>
+    <label>Deadline:</label><br/>
+    <input type="text" name="deadline", value="{{ task.deadline | date:"Y-m-d" }}"/><br/>
+    <br/>
